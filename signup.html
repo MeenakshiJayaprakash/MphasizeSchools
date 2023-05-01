@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Sign Up Page</title>
+	<style>
+        @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;500;600&family=Poppins&display=swap');
+		body {
+			background: linear-gradient(rgb(255, 255, 255),#3fe4fd);
+			font-family: 'Nunito', sans-serif;
+            height: 100vh;
+		}
+
+		.container {
+			margin: auto;
+			width: 28rem;
+			padding: 20px;
+			background-color: #fff;
+			border-radius: 5px;
+			box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+		}
+
+		h1 {
+			text-align: center;
+            font-size: 28px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,.5);
+			color: #333;
+		}
+
+		form {
+			display: flex;
+			flex-direction: column;
+		}
+
+		input[type="text"], input[type="email"], input[type="password"] {
+            width: 100%;
+			padding: 10px;
+            margin: 8px 0;
+            display: inline-block;
+			margin-bottom: 10px;
+			border-radius: 4px;
+            box-sizing: border-box;
+			border: none;
+            outline: none;
+            background: #dad9d9;
+		}
+
+		button{
+            background-color: #3fe4fd;
+            color: black;
+            padding: 14px 20px;
+			margin: 8px 0;
+            border: none;
+            width: 100%;
+			font-size: large;
+			font-weight: bold;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 15px;
+        }
+
+		input:hover {
+			background-color: #eae9e9;
+		}
+
+		button:hover {
+			background-color: #78edff;
+		}
+
+		.container form{
+			border:none;
+		}
+
+		.container label{
+			font-weight: bold;
+			display: block;
+			margin-bottom: 10px;
+			text-shadow: 2px 2px 4px rgba(0,0,0,.3);
+		}
+
+		p {
+			text-align: center;
+		}
+
+		@media screen and (max-width: 600px) {
+			.container {
+				max-width: 100%;
+			}
+		}
+
+	</style>
+</head>
+<body>
+	<div class="container">
+		<h1>Sign Up</h1>
+		<form action="p.html">
+			<label for="username">Username:</label>
+			<input type="text" placeholder="Enter Username"  id="username" name="username" required>
+
+			<label for="email">Email:</label>
+			<input type="email" placeholder="Enter email" id="email" name="email" required>
+
+			<label for="password">Password:</label>
+			<input type="password" placeholder="Enter Password" id="password" name="password" required>
+
+			<button type="submit" onclick="location.href='p.html'">Sign Up<a href="p.html"></a></button>
+		</form>
+		<p>Already have an account? 
+            <a href="login.html">Log in</a></p>
+	</div>
+	<script src="sc.js"></script>
+</body>
+</html>

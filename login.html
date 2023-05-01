@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Login Page</title>
+	<style>
+		@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;500;600&family=Poppins&display=swap');
+		body {
+			font-family: 'Nunito', sans-serif;
+			background: linear-gradient(rgb(255, 255, 255),#1ee1ff);
+			height: 100vh;			
+		}
+		
+		.container {
+			background-color: #fff;
+			border-radius: 10px;
+    		width: 28rem;
+			box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+			padding: 20px;
+			margin: auto;
+		}
+		
+		h2 {
+			text-align: center;
+			font-size: 28px;
+			text-shadow: 2px 2px 4px rgba(0,0,0,.5);
+			color: #333;
+		}
+		
+		input[type=text], input[type=password] {
+			width: 100%;
+			padding: 12px 20px;
+			margin: 8px 0;
+			display: inline-block;
+			border: none;
+			border-radius: 4px;
+			box-sizing: border-box;
+			outline: none;
+			background: #dad9d9;
+		}
+		
+		button {
+			width: 100%;
+			display: block;
+			background-color: #1ee1ff;
+			color: black;
+			padding: 14px 20px;
+			margin: 8px 0;
+			border: none;
+			font-size: large;
+			font-weight: bold;
+			border-radius: 4px;
+			cursor: pointer;
+			text-decoration: none;
+		}
+		
+		button:hover {
+			background-color: #78edff;
+		}
+
+		input:hover{
+			background-color: #eae9e9;
+		}
+		
+		input ::placeholder{
+			background-color: black;
+		}
+
+		.imgcontainer {
+			text-align: center;
+			margin: 24px 0 12px 0;
+			position: relative;
+			text-shadow: 2px 2px 4px rgba(0,0,0,.5);
+		}
+		
+		img.avatar {
+			width: 40%;
+			border-radius: 50%;
+		}
+		
+		.container form {
+			border: none;
+		}
+		
+		.container h4 {
+			font-weight: bold;
+			display: block;
+			margin-bottom: 10px;
+			text-shadow: 2px 2px 4px rgba(0,0,0,.3);
+		}
+		
+		span.psw {
+			float: right;
+			padding-top: 16px;
+		}
+		
+		@media screen and (max-width: 600px) {
+			.container {
+				max-width: 100%;
+			}
+		}
+
+		p{
+			text-align: center;
+			font-size: 20px;
+		}
+	</style>
+	<script src="script.js"></script>
+</head>
+<body>
+	<div class="container">
+		<h2>Login Here</h2>
+		<form action="p.html" id="login-form">
+			<div class="imgcontainer">
+				<img src="https://www.iconbolt.com/preview/twitter/font-awesome-solid/user-alt.svg" alt="Avatar" class="avatar">
+			</div>
+
+			<div>
+				<h4><b>Username *</b></h4>
+				<input type="text" placeholder="Enter Username" name="username" required>
+			</div>
+
+			<div>
+				<h4><b>Password *</b></h4>
+				<input type="password" placeholder="Enter Password" name="password" required>
+			</div>
+
+			<div>
+				<button type="submit" onclick="login()">Login<a href="p.html"></a></button>
+			</div>
+			<h4>
+				<input type="checkbox" checked="checked" name="remember"> Remember me
+			</h4>
+			
+			<p> Not a Member?
+				<a href="signup.html"> Sign up</a>
+			</p>
+		</form>
+	</div>
+</body>
+</html>
